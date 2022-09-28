@@ -63,3 +63,7 @@ Check your MySQL DB table for updates:
 <img width="1213" alt="Screenshot 2022-09-28 at 4 25 07 PM" src="https://user-images.githubusercontent.com/19316784/192790331-f495f182-b1a0-4774-a9da-0085f9461095.png">
 
 
+**You may also like**
+
+- APIBan-Redis https://github.com/jambonz/apiban-redis 
+
