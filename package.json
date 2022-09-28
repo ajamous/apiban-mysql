@@ -1,0 +1,16 @@
+{
+  "name": "apiban_banned_ips",
+  "version": "1.0.0",
+  "description": "",
+  "main": "sync.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "TelecomsXChange.com",
+  "license": "MIT",
+  "dependencies": {
+    "bent": "^7.3.12",
+    "mysql2": "^2.3.3",
+    "util": "^0.12.4"
+  }
+}
