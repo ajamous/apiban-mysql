@@ -54,6 +54,7 @@ Sample output
 
 getting ips list...
 saving ips list into DB...
+done.
 
 ```
 
@@ -65,5 +66,5 @@ Check your MySQL DB table for updates:
 
 **You may also like**
 
-- APIBan-Redis https://github.com/jambonz/apiban-redis 
+- APIBan-Redis: https://github.com/jambonz/apiban-redis 
 
