@@ -22,6 +22,22 @@ cd apiban-mysql/
 npm install 
 ```
 
+**Created required tables in your mysql db**
+
+```sql
+
+CREATE TABLE "last_fetched_id" (
+  "id" varchar(32) NOT NULL DEFAULT '',
+  PRIMARY KEY ("id")
+);
+
+CREATE TABLE "apiban_banned_ips" (
+  "ip" varchar(15) NOT NULL DEFAULT '',
+  PRIMARY KEY ("ip")
+);
+
+```
+
 **Enter APIBan API key and DB Credentials** 
 
 ```shell
@@ -52,7 +68,30 @@ Sample output
 
 ```js
 
+$ node sync.js 
+
 getting ips list...
+starting from ID: undefined
+fetched 250 ips, next ID 1663924065
+fetched 250 ips, next ID 1663954967
+fetched 250 ips, next ID 1663970136
+fetched 250 ips, next ID 1663991432
+fetched 250 ips, next ID 1664018643
+fetched 250 ips, next ID 1664039285
+fetched 250 ips, next ID 1664058709
+fetched 250 ips, next ID 1664082297
+fetched 250 ips, next ID 1664111965
+fetched 250 ips, next ID 1664130848
+fetched 250 ips, next ID 1664160433
+fetched 250 ips, next ID 1664198153
+fetched 250 ips, next ID 1664229896
+fetched 250 ips, next ID 1664259993
+fetched 250 ips, next ID 1664287578
+fetched 250 ips, next ID 1664321167
+fetched 250 ips, next ID 1664330768
+fetched 250 ips, next ID 1664351231
+fetched 250 ips, next ID 1664373761
+fetched 250 ips, next ID 1664386920
 saving ips list into DB...
 done.
 
