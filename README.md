@@ -1,10 +1,6 @@
-# apiban-mysql
-Fetch banned IPs from APIBan and save them to MySQL DB table
+# Apiban-mysql
 
-
-![apiban-mysql-gif_AdobeExpress-2](https://user-images.githubusercontent.com/19316784/193152549-03e5cc66-8382-4c70-a555-15ab773928c3.gif)
-
-
+Fetch attackers IPs from APIBan and save them to MySQL database table.
 
 
 **Download Project**
@@ -39,6 +35,9 @@ CREATE TABLE "apiban_banned_ips" (
   "ip" varchar(15) NOT NULL DEFAULT '',
   PRIMARY KEY ("ip")
 );
+
+INSERT INTO last_fetched_id(id) values('');
+
 
 ```
 
@@ -99,6 +98,12 @@ fetched 250 ips, next ID 1664386920
 saving ips list into DB...
 done.
 
+When there is no more IPs to add
+$ node sync.js
+
+getting ips list...
+starting from ID: 1664386920
+no new banned IPs since last sync, exiting...
 ```
 
 Check your MySQL DB table for updates:
