@@ -3,6 +3,10 @@
 Fetch attackers IPs from APIBan and save them to MySQL database table.
 
 
+https://user-images.githubusercontent.com/19316784/193254942-ccd670a7-feb1-4361-8746-136054965210.mov
+
+
+
 **Download Project**
 ```shell
 git clone https://github.com/ajamous/apiban-mysql.git
@@ -97,8 +101,11 @@ fetched 250 ips, next ID 1664373761
 fetched 250 ips, next ID 1664386920
 saving ips list into DB...
 done.
+```
 
 When there is no more IPs to add
+
+```shell
 $ node sync.js
 
 getting ips list...
