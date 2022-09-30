@@ -6,7 +6,6 @@ const get = bent('https://apiban.org', 'GET', 'json', 200);
 const mysql = require('mysql2')
 
 /* validate environment */
-
 const APIBAN_API_KEY = "XXXXXXXXXXXXXXXXX"
 const APIBAN_MYSQL_SERVER = "replace_with_mysql_ip_or_host"
 const APIBAN_MYSQL_PORT = 3306
@@ -63,6 +62,11 @@ const getBlacklist = async() => {
       console.log(`fetched ${response.ipaddress.length} ips, next ID ${id}`);
     } catch (err) {
       if (ips.length) return ips;
+
+      if(err.statusCode == 400) {
+        console.error('no new banned IPs since last sync, exiting...')
+        process.exit()
+      }
       console.error('Failed to get blacklist from apiban', err);
       console.log("URL:"+ url + "!")
       process.exit()
