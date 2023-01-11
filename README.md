@@ -121,8 +121,26 @@ Check your MySQL DB table for updates:
 <img width="1153" alt="Screenshot 2022-09-30 at 1 57 22 PM" src="https://user-images.githubusercontent.com/19316784/193255563-d2fb6ec0-d60b-4630-be5f-55fda0ef4bad.png">
 
 
+**Contributing**
 
-**You may also like**
+We welcome contributions to the apian-mysql project! If you're interested in helping to improve this project, here are a few ways to get started:
+
+
+1. Fork the repository on GitHub and make your changes in a new branch.
+2. Submit a pull request once you have made your changes. Please make sure to include a clear description of the changes you've made and the reasons for those changes.
+3. Check for open issues or open a new issue to start a discussion about a bug or feature request.
+4. Review code by looking at other pull requests and issues, this will help you understand the codebase and help in understanding what needs to be fixed or added.
+5. Provide feedback on open pull requests, this will help the maintainer to understand what changes are needed, or if the changes meet the requirement.
+6. Help out with documentation, you can help by contributing to the documentation in the GitHub wiki, this will help developers understand the project better and get started quickly.
+7. Add new test cases, before submitting a pull request please make sure to test the code with new test cases and make sure it passes the test.
+
+**Code of Conduct**
+
+We want to make sure that the apian-mysql project is an inclusive and respectful environment for everyone. We have adopted the Contributor Covenant as our Code of Conduct. By participating in this project, you are expected to follow this code. Please report any behavior that you believe is not aligned with this code.
+
+
+
+If you're interested in using Redis as a data store, you may like
 
 - APIBan-Redis: https://github.com/jambonz/apiban-redis 
 
