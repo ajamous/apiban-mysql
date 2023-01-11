@@ -1,5 +1,5 @@
 {
-  "name": "apiban_banned_ips",
+  "name": "apiban-mysql",
   "version": "1.0.0",
   "description": "",
   "main": "sync.js",
