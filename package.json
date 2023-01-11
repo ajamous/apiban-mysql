@@ -8,9 +8,14 @@
   },
   "author": "TelecomsXChange.com",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ajamous/apiban-mysql"
+  },
   "dependencies": {
     "bent": "^7.3.12",
     "mysql2": "^2.3.3",
     "util": "^0.12.4"
   }
 }
+
