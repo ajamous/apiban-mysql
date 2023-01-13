@@ -1,4 +1,4 @@
-# Apiban-mysql
+# APIban-MySQL
 
 Apiban-mysql is a project that allows you to retrieve attacker IPs from APIBan API and store them in a MySQL database table for further analysis.
 Learn more about APIBan and its capabilities at https://www.apiban.org
