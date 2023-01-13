@@ -1,20 +1,19 @@
 # Apiban-mysql
 
-Fetch attackers IPs from APIBan and save them to MySQL database table.
+Apiban-mysql is a project that allows you to retrieve attacker IPs from APIBan API and store them in a MySQL database table for further analysis.
+Learn more about APIBan and its capabilities at https://www.apiban.org
 
-Learn more about APIBan at https://www.apiban.org
+For those who prefer not to install Git or run this project in their production environment, an alternative option is to host it on a small virtual machine (VM) with providers such as Vultr. This setup enables you to save the identified bad actors' IPs to a managed MySQL database, which can be accessed via a secure TLS connection by your production systems. By using this method, you can still use the data collected by the project in your production systems without installing it directly on the production environment.
 
+**Installation**
 
-https://user-images.githubusercontent.com/19316784/193254942-ccd670a7-feb1-4361-8746-136054965210.mov
+Download Project
 
-
-
-**Download Project**
 ```shell
 git clone https://github.com/ajamous/apiban-mysql.git
 
 ```
-**Change Directory**
+Change Directory
 
 ```shell
 
@@ -22,7 +21,7 @@ cd apiban-mysql/
 
 ```
 
-**Install dependencies**
+Install dependencies
 
 ```shell
 npm install 
@@ -72,6 +71,9 @@ const APIBAN_MYSQL_PASSWORD = "replace_with_mysql_password"
 ```shell
 node sync.js
 ```
+
+https://user-images.githubusercontent.com/19316784/193254942-ccd670a7-feb1-4361-8746-136054965210.mov
+
 
 Sample output
 
@@ -123,7 +125,6 @@ Check your MySQL DB table for updates:
 <img width="1153" alt="Screenshot 2022-09-30 at 1 57 22 PM" src="https://user-images.githubusercontent.com/19316784/193255563-d2fb6ec0-d60b-4630-be5f-55fda0ef4bad.png">
 
 
-P.S: You do not need to install this on your PRODUCTION environemnt, you can run this project on a small VM on cloud hosting providers like Vultr and save the known bad actors IPs to managed mysql db that your production systems application can use over TLS.
 
 
 **Contributing**
